@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NAME</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Almendra+Display&family=Barrio&family=Caesar+Dressing&family=Copse&family=Glegoo:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7aa81c2e04.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <div class="link-container">
+            <ul class="left_hand">
+                <li class="text_edit1" id="logo"><a href="index.html">NAME</a></li>
+            </ul>
+            <ul class="right_hand">
+                <li class="head_links_edit"><a href="index.html#about">ABOUT US</a></li>
+                <li class="head_links_edit"><a href="index.html#shop">SHOP</a></li>
+                <li class="header_main_buttons header_buttons_font" id="login-btn">LOG IN</li>
+                <li class="header_main_buttons header_buttons_font" id="signup-btn">SIGN UP</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-wrapper">
+            <!-- Login Form -->
+            <div class="auth-form" id="login-form">
+                <h2>Welcome Back</h2>
+                <p class="auth-subtitle">Sign in to your account</p>
+                
+                <form id="login-form-element">
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">Sign In</button>
+                </form>
+                
+                <p class="auth-switch">
+                    Don't have an account? 
+                    <span class="switch-link" id="show-signup">Sign up here</span>
+                </p>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="auth-form hidden" id="signup-form">
+                <h2>Create Account</h2>
+                <p class="auth-subtitle">Join our productivity community</p>
+                
+                <form id="signup-form-element">
+                    <div class="input-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-btn">Create Account</button>
+                </form>
+                
+                <p class="auth-switch">
+                    Already have an account? 
+                    <span class="switch-link" id="show-login">Sign in here</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay hidden" id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Please wait...</p>
+    </div>
+
+    <!-- Error/Success Messages -->
+    <div class="message-container" id="message-container"></div>
+
+    <script type="module" src="js/login.js"></script>
+</body>
+</html>
