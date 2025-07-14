@@ -361,11 +361,11 @@ header{
     flex-direction: column;
     align-items: center;
     justify-items: center;
+}
 
-    h1{
-        font-family: 'Courier New', Courier, monospace;
-        margin-bottom: 7vmin;    
-    }
+.wrapped_1 h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 7vmin;    
 }
 
 .item_wrapper{
