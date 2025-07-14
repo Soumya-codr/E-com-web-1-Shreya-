@@ -1,18 +1,3 @@
-{
-  "name": "project",
-  "version": "1.0.0",
-  "description": "a sample e-commerce website.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "http-server . -p 3000 -o",
-    "build": "echo \"Build complete - static files ready for deployment\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "firebase": "^11.10.0",
-    "http-server": "^14.1.1"
-  }
+"scripts": {
+  "start": "http-server ./ -p 3000"
 }
