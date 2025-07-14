@@ -4,14 +4,14 @@ import { getAuth } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-aut
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 
 // Your web app's Firebase configuration
-// Replace with your actual Firebase config
 const firebaseConfig = {
-  apiKey: "your-api-key-here",
-  authDomain: "your-project-id.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project-id.appspot.com",
-  messagingSenderId: "your-sender-id",
-  appId: "your-app-id"
+  apiKey: "AIzaSyDjsCb10Psu0b78GxlEbt0O0btlD642VzY",
+  authDomain: "e-web-app.firebaseapp.com",
+  projectId: "e-web-app",
+  storageBucket: "e-web-app.firebasestorage.app",
+  messagingSenderId: "84725281860",
+  appId: "1:84725281860:web:99f92b4ebb069ba6b83811",
+  measurementId: "G-52FX8JRZ5B"
 };
 
 // Initialize Firebase
