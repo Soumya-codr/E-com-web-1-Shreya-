@@ -2,10 +2,10 @@ import { auth, db } from './firebase-config.js';
 import { 
   createUserWithEmailAndPassword, 
   signInWithEmailAndPassword, 
-  signOut,
+  signOut, 
   onAuthStateChanged 
-} from 'firebase/auth';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
+} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
+import { doc, setDoc, getDoc } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 
 // Sign up function
 export async function signUp(email, password, userData = {}) {
